@@ -1,0 +1,19 @@
+
+<!-- <ul class="products">
+    <li class="row" *ngFor = "let re of products">
+        <a class = "anh"><img [src] = "re.thumbnail" width = 299 height=199></a>
+        <a class = "ten">{{ re.name }}</a>
+        <p><button (click) = "remove(re.name)" >delete</button></p>
+    </li>
+</ul> -->
+<ul class = "products">
+    <li *ngFor = "let pro of products">
+        <p><button (click)  = "remove(pro.anh)">X</button></p>
+        <a class = "anh"><img [src] = 'pro.anh' width=299 hight=199></a>
+        <a class = "ten" >{{pro.name}}  </a>
+        <label>Số lượng mua </label>
+        <input type = number [(ngModel)]="pro.count">
+        <button (click) = "caculator(pro.name)">submit</button>
+        <a>{{pro.gia}}$</a>
+    </li>
+</ul>

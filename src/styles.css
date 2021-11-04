@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+  }
+  body {
+    background-color: #111010;
+    color: white;
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  li{
+      border-radius: #e9eee9 5px;
+      display: block;
+      padding: 400;
+      margin: 20px;
+  }
+  .ten{
+      margin-left: 10px;
+  }
+  
